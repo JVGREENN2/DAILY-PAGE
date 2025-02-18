@@ -1,0 +1,167 @@
+/* Container principal */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+.todo-container {
+    background: linear-gradient(135deg, #2a2a2a, #1c1c1c);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    padding: 20px;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+}
+.CONTEÚDO{display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;}
+/* Título */
+.title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #d7d7d7;
+    text-shadow: 2px 2px 4px #000;
+    font-weight: bold;
+}
+
+/* Input e botão */
+.input-container {
+    display: flex;
+    gap: 10px;
+}
+
+#todo-input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #444;
+    background-color: #333;
+    color: #fff;
+}
+
+#add-todo-btn {
+    padding: 10px 20px;
+    border: none;
+    background-color: #4a148c;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+#add-todo-btn:hover {
+    background-color: #6a1b9a;
+}
+
+/* Lista de tarefas */
+#todo-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0 0;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+#todo-list li {
+    background-color: #2a2a2a;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #f5f5f5;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+#todo-list li .delete-btn {
+    background-color: #b71c1c;
+    border: none;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#todo-list li .delete-btn:hover {
+    background-color: #f44336;
+}
+
+/* Scroll estilizado */
+#todo-list::-webkit-scrollbar {
+    width: 8px;
+}
+
+#todo-list::-webkit-scrollbar-thumb {
+    background-color: #4a148c;
+    border-radius: 10px;
+}
+
+#todo-list::-webkit-scrollbar-thumb:hover {
+    background-color: #6a1b9a;
+}
+/* Animação para exclusão */
+.todo-fade-out {
+    opacity: 0;
+    transform: translateX(-20px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+/* Botão de limpar tudo */
+#clear-all-btn {
+    margin-top: 20px;
+    padding: 10px;
+    width: 100%;
+    background-color: #b71c1c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+#clear-all-btn:hover {
+    background-color: #f44336;
+}
+
+/* Estilo para o seletor de categorias */
+#category-select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #444;
+    background-color: #333;
+    color: #fff;
+    font-family: inherit;
+    font-size: 1rem;
+}
+/* Filtro */
+.filter-container {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#filter-select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #444;
+    background-color: #333;
+    color: #fff;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+/* Estilo de edição */
+.editable {
+    border: 1px dashed #777;
+    background-color: #444;
+    padding: 2px 5px;
+    border-radius: 3px;
+    cursor: text;
+}

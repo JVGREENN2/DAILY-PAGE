@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATALHOS</title>
+    <link rel="icon" type="image/png" href="ASSETS/FILES/ATALHOS.png">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+    <link rel="stylesheet" href="ASSETS/STYLES/STYLE.CSS">
+    <link rel="stylesheet" href="ASSETS/STYLES/TODOLIST.CSS">
+    <link rel="stylesheet" href="ASSETS/STYLES/ALARME.CSS">
+    <link rel="stylesheet" href="ASSETS/STYLES/CALENDAR.CSS">
+    <link rel="stylesheet" href="ASSETS/STYLES/CLIMATE.CSS">
+    <link rel="stylesheet" href="ASSETS/STYLES/CURRENCY.CSS">
+    <link rel="stylesheet" href="ASSETS/STYLES/CALCULATOR.CSS">
+    <link rel="stylesheet" href="ASSETS/STYLES/LINKPAGE.CSS">
+</head>
+<body>
+    <!--TITULOS DO SIDEBAR-->
+    <div class="sidebar">
+        <div class="TAB" data-tab="TAB1">TODOLIST</div>
+        <div class="TAB" data-tab="TAB2">LINKPAGE</div>
+        <div class="TAB" data-tab="TAB3">CURRENCY-WEB</div>
+        <div class="TAB" data-tab="TAB4">CLIMATE-WEB</div>
+        <div class="TAB" data-tab="TAB5">CALENDAR</div>
+        <div class="TAB" data-tab="TAB6">ALARME</div>
+        <div class="TAB" data-tab="TAB7">CALCULADOR</div>
+    </div>
+
+    <!--CONTEÚDO PRINCIPAL-->
+    <div class="main-content">
+    <!--TODOLIST-->
+        <div id="TAB1" class="tab-content">
+        <div class="CONTEÚDO">
+            <div class="todo-container">
+                <h1 class="title">Minhas Tarefas</h1>
+                <div class="input-container">
+                    <input type="text" id="todo-input" placeholder="Adicione uma tarefa..." />
+                    <select id="category-select">
+                        <option value="Geral">Geral</option>
+                        <option value="Trabalho">Trabalho</option>
+                        <option value="Estudos">Estudos</option>
+                        <option value="Lazer">Lazer</option>
+                    </select>
+                    <button id="add-todo-btn">+</button>
+                </div>
+                <div class="filter-container">
+                    <label for="filter-select">Filtrar por:</label>
+                    <select id="filter-select">
+                        <option value="Todas">Todas</option>
+                        <option value="Geral">Geral</option>
+                        <option value="Trabalho">Trabalho</option>
+                        <option value="Estudos">Estudos</option>
+                        <option value="Lazer">Lazer</option>
+                    </select>
+                </div>
+                <ul id="todo-list"></ul>
+                <button id="clear-all-btn">Limpar Tudo</button>
+            </div>
+        </div>        
+        </div>
+        <!--LINKPAGE-->
+       <div id="TAB2" class="tab-content">
+        <div class="CONTAINER">
+          <div class="BUTTONS">
+              <button class="TAB-BTN active" content-id="SITE.PS">EM BREVE</button>
+              <button class="TAB-BTN" content-id="OFFICE">OFFICE</button>
+              <button class="TAB-BTN" content-id="LAZERES">LAZERES</button>
+          </div>
+          <div class="CONTENT" id="SITE.PS">
+          </div>
+          <div class="CONTENT" id="OFFICE">
+              <a href="https://github.com/">
+                  <div class="social-box github"><img src="ASSETS/IMAGE/Github.png" alt="Github"></div>
+              </a>
+              <a href="https://chatgpt.com/">
+                  <div class="social-box ia">CHATGBT.IA</div>
+              </a>
+              <a href="https://elevenlabs.io/">
+                  <div class="social-box ia">ELEVENLABS.IA</div>
+              </a>
+              <a href="https://codepen.io/trending">
+                  <div class="social-box ia">CODEPEN</div>
+              <a href="https://www.similarweb.com/">
+                  <div class="social-box ia">SIMILARWEB</div>
+              </a>
+              </a>
+              <a href="https://poe.com/">
+                  <div class="social-box ia">POE.IA</div>
+              </a>
+              <a href="https://pi.ai/onboarding">
+                  <div class="social-box ia">PI.IA</div>
+              </a>
+              <a href="https://www.scenario.com/">
+                  <div class="social-box ia">SCENARIO.IA</div>
+              </a>
+              <a href="https://www.canva.com/">
+                <div class="social-box ia"><img src="ASSETS/IMAGE/CANVA.webp" alt="Canva"></div>
+            </a>
+            <a href="https://mail.google.com/">
+              <div class="social-box ia"><img src="ASSETS/IMAGE/GMAIL.webp" alt="Gmail"></div>
+          </a>
+          <a href="https://www.cloudflare.com/pt-br/developer-platform/products/r2/">
+            <div class="social-box ia"><img src="ASSETS/IMAGE/CLOUDFLARE.png"></div>
+        </a>
+            <a href="https://www.linkedin.com/">
+              <div class="social-box ia"><img src="ASSETS/IMAGE/LINKEDIN.png" alt="LinkedIn"></div>
+          </a>
+          <a href="https://www.mongodb.com/pt-br">
+            <div class="social-box ia"><img src="ASSETS/IMAGE/MONGoDB.png"></div>
+        </a>
+          <a href="https://freelancer.com.br/">
+            <div class="social-box ia">FREELANCER/BR</div>
+        </a>
+        <a href="https://www.br.freelancer.com/">
+            <div class="social-box ia">FREELANCER</div>
+        </a>
+        <a href="https://www.glassdoor.com.br/Vaga/index.htm">
+          <div class="social-box ia">GLASSDOOR</div>
+      </a>
+          </div>
+          <div class="CONTENT" id="LAZERES">
+            <a href="https://images.google.com.br/">
+              <div class="social-box ia"><img src="ASSETS/IMAGE/IMAGENS.png"></div>
+          </a>
+            <a href="https://www.pngwing.com/pt">
+              <div class="social-box ia"><img src="ASSETS/IMAGE/PNGWING.ico"></div>
+          </a>
+          <a href="https://paywallreader.com/pt-br/">
+            <div class="social-box ia"><img src="ASSETS/IMAGE/JORNAL.png"></div>
+        </a>
+        <a href="https://www.flaticon.com/br/">
+          <div class="social-box ia">FLATICON</div>
+      </a>
+          <a href="https://pastedownload.com/29/">
+            <div class="social-box ia">DOWNLOADS/</div>
+        </a>
+        <a href="https://redecanaistv.art/">
+          <div class="social-box ia">REDECANAIS(2)</div>
+      </a>
+      <a href="https://redecanais.ps/">
+        <div class="social-box ia">REDECANAIS(1)</div>
+    </a>
+    <a href="https://magicstudio.com/pt/magiceraser/">
+      <div class="social-box ia">REMOVER-OBJ</div>
+  </a>
+              <a href="https://photos.google.com/">
+                  <div class="social-box ia"><img src="ASSETS/IMAGE/FOTOS.png" alt="Google Photos"></div>
+              </a>
+              <a href="https://keep.google.com/">
+                  <div class="social-box ia"><img src="ASSETS/IMAGE/KEEP.png" alt="Google Keep"></div>
+              </a>
+              <a href="https://br.pinterest.com/">
+                <div class="social-box ia"><img src="ASSETS/IMAGE/PINTEREST.png" alt="Pinterest"></div>
+            </a>
+            <a href="https://www.reddit.com/">
+              <div class="social-box ia"><img src="ASSETS/IMAGE/REDDIT.png" alt="Pinterest"></div>
+            </a>
+              <a href="https://www.facebook.com/">
+                  <div class="social-box ia"><img src="ASSETS/IMAGE/FACEBOOK.png" alt="Facebook"></div>
+              </a>
+              <a href="https://www.instagram.com/">
+                  <div class="social-box ia"><img src="ASSETS/IMAGE/INSTAGRAM.png" alt="Instagram"></div>
+              </a>
+              <a href="https://x.com/home">
+                  <div class="social-box ia"><img src="ASSETS/IMAGE/TWITTER.png" alt="Twitter"></div>
+              </a>
+              <a href="https://www.youtube.com/">
+                  <div class="social-box ia"><img src="ASSETS/IMAGE/YOUTUBE.png" alt="YouTube"></div>
+              </a>
+          </div>
+      </div>
+       </div>
+       <!--CURRENCY-WEB-->
+        <div id="TAB3" class="tab-content">
+<div class="wrapper">
+    <p>TAXA DE CÂMBIO</p>
+    <p id="rate">000</p>
+    <label for="amount">QUANTIA</label>
+    <input type="text" id="amount" value="" />
+    <div class="fromto">
+        <div class="from">
+            <label for="from">DE</label>
+            <div class="select" id="from">
+                <img src="ASSETS/FILES/EUA.png" alt="Country flag"/>
+                <span>USD</span>
+                <i class="fa-solid fa-caret-down"></i>
+                <ul></ul>
+            </div>
+        </div>
+        <i id="convert-icon" class="fa-solid fa-arrow-right-arrow-left"></i>
+        <div class="to">
+            <label for="to">PARA</label>
+            <div class="select" id="to">
+                <img src="ASSETS/FILES/EUA.png" alt="Country flag" />
+                <span>USD</span>
+                <i class="fa-solid fa-caret-down"></i>
+                <ul></ul>
+            </div>
+        </div>
+    </div>
+    <div class="convert-btn">CONVERTER</div>
+</div>
+        </div>
+        <!--CLIMATE-WEB-->
+        <div id="TAB4" class="tab-content">
+          <main>
+            <form>
+                <input type="text" id="name" autocomplete="off">
+                <button>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </form>
+            <section class="result">
+    
+                <figure class="name">
+                    <figcaption>Lo1ndon</figcaption> 
+                    <img src="https://flagsapi.com/GB/shiny/32.png">
+                </figure>
+    
+                <figure class="temperature">
+                    <img src="https://openweathermap.org/img/wn/10d@4x.png">
+                    <figcaption>
+                        <span>31</span>
+                        <sup>o</sup>
+                    </figcaption> 
+                </figure>
+                <p class="description">overcast clouds</p>
+                <ul>
+                    <li>
+                        <span>clouds</span>
+                        <i class="fa-solid fa-cloud"></i>
+                        <span id="clouds">98</span>%
+                    </li>
+                    <li>
+                        <span>humidity</span>
+                        <i class="fa-solid fa-droplet"></i>
+                        <span id="humidity">98</span>%
+                    </li>
+                    <li>
+                        <span>pressure</span>
+                        <i class="fa-solid fa-gauge"></i>
+                        <span id="pressure">1011</span>hPa
+                    </li>
+                </ul>
+            </section>
+        </main>
+        </div>
+        <!--CALENDARIO-->
+        <div id="TAB5" class="tab-content">
+          <div class="container">
+            <div class="left">
+              <div class="calendar">
+                <div class="month">
+                  <i class="fas fa-angle-left prev"></i>
+                  <div class="date">abril 2024</div>
+                  <i class="fas fa-angle-right next"></i>
+                </div>
+                <div class="weekdays">
+                  <div>DOM</div>
+                  <div>SEG</div>
+                  <div>TER</div>
+                  <div>QUA</div>
+                  <div>QUI</div>
+                  <div>SEX</div>
+                  <div>SÁB</div>
+                </div>
+                <div class="days"></div>
+                <div class="goto-today">
+                  <div class="goto">
+                    <input type="text" placeholder="mm/aaaa" class="date-input" />
+                    <button class="goto-btn">GO</button>
+                  </div>
+                  <button class="today-btn">HOJE</button>
+                </div>
+              </div>
+            </div>
+            <div class="right">
+              <div class="today-date">
+                <div class="event-day">SÁB</div>
+                <div class="event-date">20th ABRIL 2024</div>
+              </div>
+              <div class="events"></div>
+              <div class="add-event-wrapper">
+                <div class="add-event-header">
+                  <div class="title">ADICIONAR EVENTO</div>
+                  <i class="fas fa-times close"></i>
+                </div>
+                <div class="add-event-body">
+                  <div class="add-event-input">
+                    <input type="text" placeholder="NOME DO EVENTO" class="event-name" />
+                  </div>
+                  <div class="add-event-input">
+                    <input
+                      type="text"
+                      placeholder="HORÁRIO DO ÍNICIO DO EVENTO"
+                      class="event-time-from"
+                    />
+                  </div>
+                  <div class="add-event-input">
+                    <input
+                      type="text"
+                      placeholder="HORÁRIO DO FINAL DO EVENTO"
+                      class="event-time-to"
+                    />
+                  </div>
+                </div>
+                <div class="add-event-footer">
+                  <button class="add-event-btn">ADICIONAR EVENTO</button>
+                </div>
+              </div>
+            </div>
+            <button class="add-event">
+              <i class="fas fa-plus"></i>
+            </button>
+          </div>
+        </div>
+        <!--ALARME-->
+        <div id="TAB6" class="tab-content">
+        <div class="CONTEUDO2">
+    <div class="wrapper">
+        <img src="ASSETS/FILES/clock.svg" alt="clock">
+    <div class="H1">00:00:00 PM</div>
+    <div class="content">
+      <div class="column">
+        <select>
+          <option value="Hour" selected disabled hidden>Hour</option>
+        </select>
+      </div>
+      <div class="column">
+        <select>
+          <option value="Minute" selected disabled hidden>Minute</option>
+        </select>
+      </div>
+      <div class="column">
+        <select>
+          <option value="AM/PM" selected disabled hidden>AM/PM</option>
+        </select>
+      </div>
+    </div>
+    <button id="SET-ALARM">Set Alarm</button>
+  </div>
+</div>
+        </div>
+        <!--CALCULATOR-->
+        <div id="TAB7" class="tab-content">
+          <div id="calculator">
+            <input id="display" readonly>
+            <div id="keys">
+                <button class="UAU" onclick="clearDisplay()" id="operator-btn">AC</button>
+                <button class="UAU" onclick="appendToDisplay('Math.PI')">π</button>
+                <button class="UAU" onclick="appendToDisplay('(')">(</button>
+                <button class="UAU" onclick="appendToDisplay(')')">)</button>
+                <button class="UAU" onclick="appendToDisplay('Math.E')">e</button>
+                <button class="UAU" onclick="clearEntry()" id="operator-btn">CE</button>
+                <button class="UAU" onclick="appendToDisplay('Math.log(')">ln</button>
+                <button class="UAU" onclick="factorial()">x!</button>
+                <button class="UAU" onclick="appendToDisplay('**')">xʸ</button>
+                <button class="UAU" onclick="squareRoot()">√</button>
+                <button class="UAU" onclick="appendToDisplay('/')" id="operator-btn">÷</button>
+                <button class="UAU" onclick="appendToDisplay('Math.tan(')">tan</button>
+                <button class="UAU" onclick="appendToDisplay('7')">7</button>
+                <button class="UAU" onclick="appendToDisplay('8')">8</button>
+                <button class="UAU" onclick="appendToDisplay('9')">9</button>
+                <button class="UAU" onclick="appendToDisplay('*')" id="operator-btn">×</button>
+                <button class="UAU" onclick="appendToDisplay('Math.cos(')">cos</button>
+                <button class="UAU" onclick="appendToDisplay('4')">4</button>
+                <button class="UAU" onclick="appendToDisplay('5')">5</button>
+                <button class="UAU" onclick="appendToDisplay('6')">6</button>
+                <button class="UAU" onclick="appendToDisplay('-')" id="operator-btn">−</button>
+                <button class="UAU" onclick="appendToDisplay('Math.sin(')">sin</button>
+                <button class="UAU" onclick="appendToDisplay('1')">1</button>
+                <button class="UAU" onclick="appendToDisplay('2')">2</button>
+                <button class="UAU" onclick="appendToDisplay('3')">3</button>
+                <button class="UAU" onclick="appendToDisplay('+')" id="operator-btn">+</button>
+                <button class="UAU" onclick="appendToDisplay('Math.log10(')">log</button>
+                <button class="UAU" onclick="appendToDisplay('%')">%</button>
+                <button class="UAU" onclick="appendToDisplay('0')">0</button>
+                <button class="UAU" onclick="appendToDisplay('.')">.</button>
+                <button class="UAU" onclick="calculate()" id="operator-btn">=</button>
+            </div>
+        </div>
+        </div>
+<script src="ASSETS/JAVASCRIPT/CALENDAR.JS"></script>
+<script src="ASSETS/JAVASCRIPT/SCRIPT.JS"></script>
+<script src="ASSETS/JAVASCRIPT/TODOLIST.JS"></script>
+<script src="ASSETS/JAVASCRIPT/ALARME.JS"></script>
+<script src="ASSETS/JAVASCRIPT/CLIMATE.JS"></script>
+<script src="ASSETS/JAVASCRIPT/CURRENCY.JS"></script>
+<script src="ASSETS/JAVASCRIPT/CALCULATOR.JS"></script>
+<script src="ASSETS/JAVASCRIPT/LINKPAGE.JS"></script>
+</body>
+</html>

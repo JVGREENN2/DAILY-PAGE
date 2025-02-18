@@ -1,0 +1,112 @@
+.CONTAINER{
+    display: inline-table;
+    align-items: end;
+    justify-content: end;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.2);
+    border-radius: 40px;
+    border: 3px solid rgba(255, 255, 255, 0.5);
+    border-right: 3px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 3px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);}
+.BUTTONS{display: flex;}
+.CONTENT{
+    display: none;
+    width: 1500px;
+    height: 850px;}
+.CONTENT.SHOW{
+    display: inline-table;
+    align-items: end;
+    justify-content: end;
+    width: 1200px;
+    height: 600px;
+    background-color: #a5b4fc;
+    opacity: 0.3;
+    border-radius: 0px 0px 40px 40px;}
+
+.TAB-BTN {
+    width: 100%;
+    border: solid 2px;
+    color: #020617;
+    background-color: #a5b4fc;
+    opacity: 0.3;
+    border-radius: 180px 180px 0px 0px;
+    font-weight: 500;
+    padding: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.TAB-BTN:active {
+    background-color: rgba(255, 255, 255, 0.1);
+    opacity: 0.3;
+}
+
+.TAB-BTN:hover {
+    background-color: #a5b4fc;
+    opacity: 0.7;
+}
+.SITES,
+.social-box {
+    width: 150px;
+    height: 150px;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10%;
+    border: 5px solid #000;
+    outline: 5px solid #FFFFFF;
+    line-height: 150px;
+    margin: 10px;
+    float: left;
+}
+.TITULO{background: #000;}
+
+.social-box img{
+    width: 100px; /* Defina o tamanho do contêiner */
+    height: 100px;
+    background-size: cover; /* Ajusta a imagem ao tamanho do elemento */
+    background-position: center;
+    display: inline-block;
+}
+.github{
+    background-color: #FFFFFF;
+    outline: 5px solid #FFFFFF;}
+.ia{
+    background-color: #000;
+    border: 5px solid #FFFFFF;
+    outline: 5px solid #000;
+    color: white;}
+@media (max-width: 1200px) {
+    .social-box {
+        width: 150px;
+        height: 120px;
+        line-height: 120px;
+    }
+}
+
+@media (max-width: 992px) {
+    .social-box {
+        width: 120px;
+        height: 100px;
+        line-height: 100px;
+    }
+}
+
+@media (max-width: 768px) {
+    .social-box {
+        width: 100px;
+        height: 80px;
+        line-height: 80px;
+        margin: 5px;
+    }
+}
+
+@media (max-width: 576px) {
+    .social-box {
+        width: 80px;
+        height: 60px;
+        line-height: 60px;
+        margin: 2px;
+    }}
